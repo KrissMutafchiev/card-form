@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tittle</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <link rel="stylesheet" href="style/media-qry.css">
+</head>
+
+<body>
+<div id="main-box" class="container-fluid">
+    <div class="creditCardForm">
+        <div class="payment">
+            <form >
+                <div class="form-group owner">
+                    <label for="owner">Owner</label>
+                    <input type="text" class="form-control" required id="owner">
+                </div>
+                <div class="form-group CVV">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" required id="cvv">
+                </div>
+                <div class="form-group" id="card-number-field">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" class="form-control" required id="cardNumber">
+                </div>
+                <div class="form-group" id="expiration-date">
+                    <label>Expiration Date</label>
+                    <select id="mounts">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                    <select id="year">
+                        <option value="2016"> 2016</option>
+                        <option value="2017"> 2017</option>
+                        <option value="2018"> 2018</option>
+                        <option value="2019"> 2019</option>
+                        <option value="2020"> 2020</option>
+                        <option value="2021"> 2021</option>
+                    </select>
+                </div>
+                <div class="form-group" id="credit_cards">
+                    <img src="images/visa.jpg" id="visa">
+                    <img src="images/mastercard.jpg" id="mastercard">
+                    <img src="images/amex.jpg" id="amex">
+                </div>
+                <div class="form-group" id="pay-now">
+                    <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="data-form" class="container">
+    <div class="row">
+        <ul class="form-group col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 col-sm-12 col-xs-12">
+            <h1>Success submit form !</h1>
+            <li id="owner-data" class="form-control"></li>
+            <li id="card-number-data" class="form-control"></li>
+            <li id="cvv-data" class="form-control"></li>
+            <li id="exp-data" class="form-control"></li>
+            <input type="button" class="btn btn-lg btn-info" value="Back" id="back-home">
+        </ul>
+    </div>
+</div>
+<script src="lib/jquery-3.1.0.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/jquery.payform.min.js" charset="utf-8"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
